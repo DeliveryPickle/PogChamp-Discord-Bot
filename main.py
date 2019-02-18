@@ -66,4 +66,4 @@ async def on_message(message):
     await client.process_commands(message)
 
 keep_alive()
-client.run(Token)
+client.run(str(os.environ.get('BOT_TOKEN')))
